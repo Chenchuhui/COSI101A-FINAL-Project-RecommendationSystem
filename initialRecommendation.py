@@ -20,7 +20,7 @@ df = df.drop(columns=['open_state'])
 
 df.to_csv('data/item_matrix.csv', index=False)
 
-user_data = pd.read_csv('data/user_matrix.csv', index_col='username')
+user_data = pd.read_csv('data/Real_User_Feature_Matrix.csv', index_col='username')
 item_data = pd.read_csv('data/item_matrix.csv', index_col='title')
 
 user_matrix = user_data.values
